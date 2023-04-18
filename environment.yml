@@ -1,6 +1,7 @@
 name: sam
 channels:
   - defaults
+  - conda-forge
   - pytorch
 dependencies:
   - _libgcc_mutex=0.1=main
@@ -29,4 +30,11 @@ dependencies:
   - torchvision==0.13.1
   - torchaudio==0.12.1
   - cudatoolkit=11.3
+  - pip:
+    - opencv-python 
+    - pycocotools 
+    - matplotlib 
+    - onnxruntime 
+    - onnx
+    - jupyter
 prefix: /home/xzurutuza/miniconda3/envs/sam
